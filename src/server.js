@@ -57,7 +57,7 @@ async function getGifPath(url) {
     if (stderr) {
         throw new Error(`Conversion error: '${stderr}'`);
     }
-    fs.unlink(inPath);
+    fs.unlink(inPath, () => {});
 
     return path.resolve(outPath);
 
