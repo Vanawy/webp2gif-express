@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "lru-cache": "^7.3.1",
+    "node-fetch": "^3.2.0"
+  },
+  "name": "webp2gif",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilya Sakharchuk <saharchuk999@gmail.com> (https://www.vanawy.dev)",
+  "license": "MIT",
+  "description": ""
+}
