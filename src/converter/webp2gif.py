@@ -13,7 +13,7 @@ def webp2gif(path: Path, out: Path):
     frames: list[Image.Image] = []
     for frame in ImageSequence.Iterator(img):
         im2 = Image.new("RGB", frame.size, (255, 255, 255))
-        im2.paste(frame, mask=frame.split()[3])
+        im2.paste(frame)
         frames.append(im2.convert('RGB'))
 
     frames[0].save(out.with_suffix('.gif'),
